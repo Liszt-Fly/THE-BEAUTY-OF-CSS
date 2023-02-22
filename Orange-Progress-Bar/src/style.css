@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.progress {
+  width: 350px;
+  height: 30px;
+  background: linear-gradient(to right, transparent 10px, #333 0) 0/20px,
+    linear-gradient(to right, orange, orange) 0 / var(--per) no-repeat, #eee;
+  /* background: linear-gradient(to right, transparent 10px, #333 0) 0/20px #eee; */
+  transform: skewX(-30deg);
+}
+
+span {
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
